@@ -1,0 +1,338 @@
+
+body{
+	margin:1%;
+	padding:1%;
+	font-size:150%;
+	background-color: #ffffff;
+	color: #1898E2;
+	color: #093592;
+
+	
+}
+
+
+p{
+	line-height: 1.5;
+}
+main{
+	line-height: 1.5;
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+nav {
+	width: 100%;
+	margin: 0 auto;
+	background: #fff;
+	padding: 50px 0;
+	box-shadow: 0px 5px 0px #8f8b8b;
+}
+  
+nav ul {
+	list-style: none;
+	text-align: center;
+}
+nav ul li {
+	display: inline-block;
+}
+nav ul li a {
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	color: #8f8b8b;
+	font-weight: 800;
+	text-transform: uppercase;
+	margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+transition: all .5s;
+}
+
+nav ul li a:hover {
+	color: #555;
+}
+nav.navbar ul li a {
+	position:relative;
+	z-index: 1;
+}
+nav.navbar ul li a:hover {
+	color: #ffffff;
+}
+nav.navbar ul li a:after {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	width: 100%;
+	height: 1px;
+	content: '.';
+	color: transparent;
+	background: #9a9fe1;
+	opacity: 0;
+	z-index: -1;
+}
+nav.navbar ul li a:hover:after {
+	opacity: 1;
+	visibility: visible;
+	height: 100%;
+}
+  
+
+a{
+	color: #093592;
+	text-decoration: none;	
+}
+
+a.skip {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+a.skip:focus, a.skip:active {
+    color: #6b77c0;
+    left: auto;
+    top: auto;
+    width: 50%;
+    height: auto;
+    overflow:auto;
+    padding:5px;
+    text-align:center;
+    font-size:1.2em;
+    z-index:999;
+}
+
+
+
+
+.active{
+	background:#ffffff;
+	color:#6b77c0;
+	text-decoration: underline;
+}
+.active a:visited{
+	color: #8f88cfc4; 
+	text-decoration:none;
+}
+
+h1{
+	font-weight: bold;
+	color: #093592;
+	font-family: impact;
+	line-height: 100px;
+	font-size: 40px;
+	animation: move 5s ease;
+	grid-column: 2/3;
+	justify-self: center;
+
+}
+
+img{
+    height: 250px;;
+    width: 250px;
+	object-fit:cover;
+    border: 3px solid #8f88cfc4;
+	padding: 1px;
+    margin: 10px;
+	border-radius: 15px;
+	
+}
+
+.navbar{
+	position: sticky;
+	top: 0 ;
+}
+
+h2{
+	font-size: 2em; 
+	color: #7d74d4c4;
+	font-family: bungee;
+	position: sticky;
+	top: 0;
+	background: #ffffff;
+	grid-column: 1/ span 3;
+	text-align: center;
+	width:100%;
+}
+
+
+
+p, h1, h2 {
+    padding: 14px;
+	
+}
+
+.grid{
+	grid-template-columns: 1fr 1fr 1fr;
+	justify-items: center;
+	justify-content: space-around;
+	align-items: center;
+
+}
+
+
+@keyframes move{
+    from {width: 475px; opacity:0;}
+    to {width:475px; opacity: 1;}
+}
+
+.intro{
+	grid-column:1/span 3;
+	padding: 10px;
+
+}
+
+#introtext,
+.h1{
+	color: #ffffff;
+}
+
+
+#israelimages,
+#italyimages,
+#sloveniaimages,
+#chechimages,
+#franceimages,
+#aboutme{
+	grid-column: 2/3;
+	justify-items:center;
+
+
+}
+
+
+.para{
+	color: #fff;
+	background: #8f88cfc4;
+	border-radius: 10px;
+	grid-column: 1/span 3;
+	
+}
+
+
+#contact{
+	text-decoration: underline;
+}
+
+.form{
+	font-size: 15px;
+	display: block;
+}
+
+.usa{
+	display:flex;
+	flex-flow: column wrap;
+	align-items: center;
+}
+
+
+
+footer{
+	text-align: center;
+}
+
+.video{
+	position:absolute;
+	object-fit: fill;
+	width: 100%;
+	z-index: -3;
+}
+
+.topimages{
+	display:none;
+}
+@media screen and (prefers-reduced-motion: reduce){
+    #logo{
+        animation:none;
+    }
+
+	video{
+		background-image: url('../images/calimount.jpeg');
+	}
+}
+@media screen and (min-width: 900px){
+	.grid{
+		display: grid;
+		grid-column: 1/3;
+	}
+
+	#israelimages,
+	 #italyimages, 
+	 #sloveniaimages, 
+	 #chechimages, 
+	 #franceimages,
+	  #aboutme {
+		  grid-column:1/4;
+	  }
+
+	.intro{
+		display:grid;
+		grid-column: 1/2;
+	}
+
+	.topimages{
+		display: flex;
+		align-items: center;
+		grid-column: 2/4;
+		justify-content:inherit;
+	  }
+	
+	.topimages img {
+		border: 3px solid #093592;
+		width: 200px;
+	}
+	
+	.usa{
+		flex-direction: row;
+		justify-content: space-around
+
+
+	}
+
+	.hidden{
+		display:none
+	}
+
+	
+}
+
+@media screen and (min-width: 1200px){
+	.topimages img {
+		grid-column: 3/5;	
+		grid-row: 1/4;	
+		object-fit:fill;
+		width:250px;
+
+	}
+
+	.topimages{
+		justify-content: space-evenly;
+	}
+	.intro{
+		display:grid;
+		grid-column: 1/2;
+	}
+
+	#israelimages,
+	#italyimages, 
+	#sloveniaimages, 
+	#chechimages, 
+	#franceimages,
+	 #aboutme {
+		 grid-column:2/3;
+	 }
+
+	.hidden{
+		display:inherit;
+	}
+}
