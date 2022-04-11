@@ -9,6 +9,8 @@
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="dist/css/lightbox.css" rel="stylesheet" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://kit.fontawesome.com/586aa11351.js" crossorigin="anonymous"></script>
 	<title>About Me</title>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -41,15 +43,19 @@
 				Hi and welcome to my travel blog! I'm Katie Radner, a sophomore at the University of Michigan. I am from Huntington Woods, Michigan. 
 				Here I will share all about my travels. I've been many places overseas, around the country, and even in my home state. 
 				Many of the places that I have traveled to were with my best friends from summer camp. 
-				We participated in a program for teens during the summer of 2018. We went to Italy, Israel, and Slovenia on a five week trip. 
-				My mom and I have a passion for traveling and love traveling together even more. We have gone on many trips together that I will discuss on 
-				site. Throughout my travels, I have learned a lot about different practices and cultures, and I am so fortunate that I have been able to have 
-				had all of these experiences at a young age. 
+				We participated in a program for teens during the summer of 2018. We went to Italy, Israel, and Slovenia on a five week trip. From here, 
+				my love for traveling sparked. Now, I continue my passion for traveling with my friends and family. 
+				My mom and I have a shared fascination with traveling and experiencing new cultures. We have taken many trips together that are depicted
+				throughout the site. I feel so fortunate to have been able to have had these amazing experiences, and I hope 
+				to take more trips to continue learning about the incredible world we live in. 
 			</p>
 			<div class=grid id=aboutme>
-				<img src = "images/headshot1.jpg" alt="Headshot" width="200"/>
-				<img src = "images/friendsunset.jpeg" alt="Sunset with friend" width="200"/>
-				<img src="images/hwsmell.JPG" alt="Smelling Flowers" width="200"/>
+				<a class="example-image-link" href="images/headshot1.jpg" data-lightbox="example-set" data-title="Click the right arrow to move to the next picture.">
+				<img class="example-image" src = "images/headshot1.jpg" alt="Headshot" width="200"/>
+				<a class="example-image-link" href="images/friendsunset.jpeg" data-lightbox="example-set" data-title="Click the right arrow to move to the next picture.">
+				<img class="example-image" src = "images/friendsunset.jpeg" alt="Sunset with friend" width="200"/>
+				<a class="example-image-link" href="images/hwsmell.JPG" data-lightbox="example-set" data-title="Click the right arrow to move to the next picture.">
+				<img class="example-image" src="images/hwsmell.JPG" alt="Smelling Flowers" width="200"/>
 
 			</div>
 	</main>	
@@ -86,5 +92,7 @@
 
 	
 	</footer>
+	<script src="dist/js/lightbox.js"></script>
+
 </body>
 </html>
