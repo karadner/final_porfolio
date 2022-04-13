@@ -3,7 +3,7 @@ body{
 	margin:1%;
 	padding:1%;
 	font-size:150%;
-	background-color: #ffffff;
+	background-color: #FFFFFF;
 	color: #1898E2;
 	color: #093592;
 
@@ -13,6 +13,8 @@ body{
 
 p{
 	line-height: 1.5;
+	font-family: didot;
+
 }
 main{
 	line-height: 1.5;
@@ -195,7 +197,7 @@ p, h1, h2 {
 #introtext,
 #introtexts,
 .h1{
-	color: #ffffff;
+	color: #FFFFFF;
 }
 
 
@@ -207,7 +209,6 @@ p, h1, h2 {
 #aboutme{
 	grid-column: 2/3;
 	justify-items:center;
-
 
 }
 
@@ -252,23 +253,10 @@ footer{
 .topimages{
 	display:none;
 }
-@media screen and (prefers-reduced-motion: reduce){
-    #logo{
-        animation:none;
-    }
 
-	video{
-		background-image: url('../images/calimount.jpeg');
-	}
 
-	.parallax{
-		background-attachment: initial;
-	}
 
-	.flip-card{
-		animation:none;
-	}
-}
+
 @media screen and (min-width: 800px){
 	.grid{
 		display: grid;
@@ -318,7 +306,6 @@ footer{
 		height: 300px;
 		perspective: 1000px;
 		display: inline;
-
 	  }
 	  .flip-card .inner {
 		position: relative;
@@ -412,49 +399,42 @@ footer{
 	#introtexts{
 		font-family: didot;
 	}
+
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    h1{
+        animation:none;
+    }
+
+	#videogone,
+	#videogones{
+		display:none;
+	}
 	
-	.flip-card {
-		background-color: transparent;
-		width: 300px;
-		height: 300px;
-		perspective: 1000px;
-		display: inline;
-	  }
-	  .flip-card .inner {
-		position: relative;
-		width: 100%;
-		height: 100%;
-		transition: transform 0.8s;
-		transform-style: preserve-3d;
-	  }
-	  .flip-card .inner .front,
-	  .flip-card .inner .back {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		-webkit-backface-visibility: hidden;
-		backface-visibility: hidden;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
-	  }
+	.parallax,
+	.accessvid{
+		background-image: url('../images/calimount.jpeg');
+		min-height: 200px;
+		min-width: 100%;
+	}
 
-	  .flip-card .inner .back {
-		color: white;
-		transform: rotateY(180deg);
-	  }
-	  .flip-card:hover .inner {
-		transform: rotateY(180deg);
-	  }
+	#introtexts,
+	#introtext{
+		color: #093592;
+	}
 
+
+
+	#parallax{
+		background-attachment: initial;
+	}
+	
 	.flip-card:focus-within .inner,
 	.flip-card:active .inner,
-	.flip-card:focus .inner{
-		transform: rotateY(180deg);
+	.flip-card:focus .inner,
+	.back,
+	.flip-card:hover .inner{
+		transform: none;
 	}
-	  
-	  
-	  
-
 }

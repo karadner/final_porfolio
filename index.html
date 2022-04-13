@@ -9,8 +9,6 @@
 	<link rel="stylesheet" href="css/html5reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link href="dist/css/lightbox.css" rel="stylesheet" />
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://kit.fontawesome.com/586aa11351.js" crossorigin="anonymous"></script>
 	<title>About Me</title>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -49,50 +47,41 @@
 				throughout the site. I feel so fortunate to have been able to have had these amazing experiences, and I hope 
 				to take more trips to continue learning about the incredible world we live in. 
 			</p>
+
 			<div class=grid id=aboutme>
-				<a class="example-image-link" href="images/headshot1.jpg" data-lightbox="example-set" data-title="Click the right arrow to move to the next picture.">
-				<img class="example-image" src = "images/headshot1.jpg" alt="Headshot" width="200"/>
-				<a class="example-image-link" href="images/friendsunset.jpeg" data-lightbox="example-set" data-title="Click the right arrow to move to the next picture.">
-				<img class="example-image" src = "images/friendsunset.jpeg" alt="Sunset with friend" width="200"/>
-				<a class="example-image-link" href="images/hwsmell.JPG" data-lightbox="example-set" data-title="Click the right arrow to move to the next picture.">
-				<img class="example-image" src="images/hwsmell.JPG" alt="Smelling Flowers" width="200"/>
+				<img src = "images/headshot1.jpg" alt="Headshot" width="200"/>
+				<img  src = "images/friendsunset.jpeg" alt="Sunset with friend" width="200"/>
+				<img src="images/hwsmell.JPG" alt="Smelling Flowers" width="200"/>
+				</div>
+				<form
+				action="https://formspree.io/f/moqrldbo"
+				method="POST">
+				<fieldset>
+				  <legend id="contact">Contact Me</legend>
+			  
+				  <label for="name" class="form">Your Name</label>
+				  <input type="text" id="name" name="full_name" placeholder="Enter Your Name">
+			  
+				  <label for="email" class="form">Your Email</label>
+				  <input type="email" id="email" name="email" placeholder="Enter Your Email">
+			  
+			  
+				  <label for="number" class="form">Your Phone Number</label>
+				  <input type="tel" name="phone" id="number" placeholder="Enter Your Number">	
+			  
+				  <label for="message" class="form">Leave A Message</label>
+				  <input placeholder="Enter Your Message" id="message" title="message">
+			  
+			  
+				  <label for="submit" class="form">Submit</label>
+				  <input type="submit" id="submit" title="submit">
+				</fieldset>
+			   </form>
+	</main>
 
-			</div>
-	</main>	
-	<form
-  	action="https://formspree.io/f/moqrldbo"
-  	method="POST">
-
-	  <fieldset>
-		<legend id="contact">Contact Me</legend>
-	
-		<label for="name" class="form">Your Name</label>
-		<input type="text" id="name" name="full_name" placeholder="Enter Your Name">
-	
-		<label for="email" class="form">Your Email</label>
-		<input type="email" id="email" name="email" placeholder="Enter Your Email">
-	
-	
-		<label for="number" class="form">Your Phone Number</label>
-		<input type="tel" name="phone" id="number" placeholder="Enter Your Number">	
-	
-		<label for="message" class="form">Leave A Message</label>
-		<input placeholder="Enter Your Message" id="message">
-	
-	
-		<label for="submit"></label>
-		<input type="submit" id="submit" >
-	  </fieldset>
-	 </form>
 	<footer>
 		<p>Katie Radner &copy; 2022</p>
 		<i class="fa-solid fa-ice-cream"></i>
-
-		
-
-	
 	</footer>
-	<script src="dist/js/lightbox.js"></script>
-
 </body>
 </html>
