@@ -211,7 +211,8 @@ h1{
 #italyimages,
 #sloveniaimages,
 #chechimages,
-#franceimages{
+#franceimages,
+#aboutme{
 	grid-column: 2/3;
 	justify-items:center;
 
@@ -283,7 +284,7 @@ footer{
 	 #sloveniaimages, 
 	 #chechimages, 
 	 #franceimages,
-	  #aboutme {
+	 #aboutme{
 		  grid-column:1/4;
 	  }
 
