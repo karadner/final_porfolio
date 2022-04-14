@@ -422,6 +422,10 @@ footer{
 		padding: .2%;
 	}
 
+	.forms{
+		grid-column:1/2;
+	}
+
 
 }
 
