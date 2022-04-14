@@ -1,7 +1,4 @@
-
 body{
-	margin:1%;
-	padding:1%;
 	font-size:150%;
 	background-color: #FFFFFF;
 	color: #1898E2;
@@ -14,6 +11,9 @@ body{
 p{
 	line-height: 1.5;
 	font-family: didot;
+	margin: 1%;
+    padding: 1%;
+
 
 }
 main{
@@ -169,7 +169,7 @@ h2{
 
 
 
-p, h1, h2 {
+h1{
     padding: 14px;
 	
 }
@@ -399,6 +399,12 @@ footer{
 	#introtexts{
 		font-family: didot;
 	}
+
+	.usa img{
+		margin: 1%;
+		padding: .1%;
+	}
+
 
 }
 
