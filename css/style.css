@@ -194,6 +194,12 @@ h1{
 
 }
 
+.aboutmeintro{
+	grid-column:1/span 3;
+	padding: 10px;
+	text-align: center;
+}
+
 #introtext,
 #introtexts,
 .h1{
@@ -205,12 +211,12 @@ h1{
 #italyimages,
 #sloveniaimages,
 #chechimages,
-#franceimages,
-#aboutme{
+#franceimages{
 	grid-column: 2/3;
 	justify-items:center;
 
 }
+
 
 
 .para{
@@ -220,6 +226,8 @@ h1{
 	grid-column: 1/span 3;
 	
 }
+
+
 
 
 #contact{
@@ -375,12 +383,9 @@ footer{
 	#italyimages, 
 	#sloveniaimages, 
 	#chechimages, 
-	#franceimages{
+	#franceimages,
+	#aboutme{
 		 grid-column:2/3;
-	 }
-	 #aboutme{
-		display: grid;
-		grid-column:2/3;
 	 }
 	
 
