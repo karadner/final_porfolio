@@ -375,10 +375,14 @@ footer{
 	#italyimages, 
 	#sloveniaimages, 
 	#chechimages, 
-	#franceimages,
-	 #aboutme {
+	#franceimages{
 		 grid-column:2/3;
 	 }
+	 #aboutme{
+		display: grid;
+		grid-column:2/3;
+	 }
+	
 
 	.hidden{
 		display:inherit;
