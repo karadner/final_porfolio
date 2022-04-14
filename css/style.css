@@ -234,6 +234,7 @@ h1{
 
 .forms{
 	margin: 10%;
+	grid-column: 1/2;
 
 }
 
