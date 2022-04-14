@@ -18,7 +18,7 @@ p{
 }
 main{
 	line-height: 1.5;
-	display:grid;
+	/* display:grid; */
 	grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -140,7 +140,7 @@ h1{
 }
 
 img{
-    height: 250px;;
+    height: 250px;
     width: 250px;
 	object-fit:cover;
     border: 3px solid #8f88cfc4;
@@ -152,7 +152,7 @@ img{
 
 .navbar{
 	position: sticky;
-	top: 0 ;
+	top: 0;
 }
 
 h2{
