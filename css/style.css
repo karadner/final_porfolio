@@ -18,7 +18,7 @@ p{
 }
 main{
 	line-height: 1.5;
-	/* display:grid; */
+	display:grid;
 	grid-template-columns: 1fr 1fr 1fr;
 }
 
